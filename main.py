@@ -3,7 +3,7 @@ from firebase_admin import credentials, db
 import requests
 
 # Initialize Firebase Admin SDK
-cred = credentials.Certificate(r"C:\Users\dhari\Desktop\sudithi's project\weather-bot-23a20-firebase-adminsdk-56j64-9d75aad948.json")
+cred = credentials.Certificate("weather-bot-23a20-firebase-adminsdk-56j64-9d75aad948.json")
 firebase_admin.initialize_app(cred, {
     "databaseURL": "https://weather-bot-23a20-default-rtdb.firebaseio.com/"
 })
