@@ -5,7 +5,7 @@ import requests
 # Initialize Firebase Admin SDK
 cred = credentials.Certificate("weather-bot-23a20-firebase-adminsdk-56j64-9d75aad948.json")
 firebase_admin.initialize_app(cred, {
-    "https://weather-dbf64-default-rtdb.firebaseio.com/"
+    "databaseURL": "https://weather-dbf64-default-rtdb.firebaseio.com/"
 })
 
 # Replace with your OpenWeatherMap API key
