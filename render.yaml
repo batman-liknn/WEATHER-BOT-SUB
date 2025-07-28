@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: weather-updater
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: FIREBASE_CREDENTIALS_JSON
+        value: YOUR FULL JSON HERE or leave blank to set manually in Render
