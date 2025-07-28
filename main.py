@@ -5,8 +5,7 @@ from firebase_admin import credentials, db
 import requests
 
 # Load credentials from environment variable
-cred_data = json.loads(os.environ["FIREBASE_CREDENTIALS"])
-cred = credentials.Certificate(cred_data)
+cred = credentials.Certificate("serviceAccountKey.json")
 
 # Initialize Firebase
 firebase_admin.initialize_app(cred, {
